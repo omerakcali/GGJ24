@@ -33,6 +33,5 @@ public class AccessoryAddButton : MonoBehaviour
     {
         if(_id == -1) return;
         GameManager.Instance.CurrentClient.Equip(_id);
-        UIManager.Instance.RefreshAccessoryButtons();
     }
 }

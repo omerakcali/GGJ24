@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     private ClientCharacter _currentClient;
 
     public static GameManager Instance;
+    public bool RemoveItemMode { get; set; }
 
     private void Awake()
     {
