@@ -151,8 +151,11 @@ public class ClientCharacter : MonoBehaviour
     
     public float CalculateCurrentScore()
     {
-        
-        return 0f;
+        var multiplierSum = AccessoryScoreMultiplier + ExpressionScoreMultiplier + FramingScoreMultiplier;
+        var max = multiplierSum * 100;
+
+        var current = CalculateAccessoryScore() + CalculateExpressionScore() + CalculateFramingScore();
+        return current / max;
     }
 }
 

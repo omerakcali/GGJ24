@@ -53,7 +53,7 @@ public class UIManager : MonoBehaviour
         PhotoSceneRoot.SetActive(false);
     }
 
-    public void SetStudioMode(ClientCharacter character)
+    public void SetStudioMode()
     {
         StoreSceneRoot.SetActive(false);
         StudioSceneRoot.SetActive(true);

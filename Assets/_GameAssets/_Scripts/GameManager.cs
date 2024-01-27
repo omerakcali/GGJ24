@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using DG.Tweening;
 using NaughtyAttributes;
 using UnityEngine;
@@ -12,6 +13,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform ClientPosition;
     [SerializeField] private Transform LinePosition;
     [SerializeField] private float LineDelta = 1.75f;
+
+    [SerializeField] private CinemachineVirtualCamera MainCamera;
+    [SerializeField] private CinemachineVirtualCamera PhotoCamera;
+    [SerializeField] private CameraTargetMovement CameraTarget;
     
     public List<GameDayInfo> Days;
 
@@ -62,14 +67,23 @@ public class GameManager : MonoBehaviour
     }
     public void StartStudioMode()
     {
+        MainCamera.gameObject.SetActive(true);
+        PhotoCamera.gameObject.SetActive(false);
+        CameraTarget.Disable();
         StoreScene.gameObject.SetActive(false);
         StudioScene.gameObject.SetActive(true);
-        UIManager.Instance.SetStudioMode(_currentClient);
+        UIManager.Instance.SetStudioMode();
         SetQueueVisibility(false);
     }
 
     public void StartPhotoshoot()
     {
+        MainCamera.gameObject.SetActive(false);
+        PhotoCamera.gameObject.SetActive(true);
+        CameraTarget.Enable();
+        
+        UIManager.Instance.SetPhotoMode();
+
         /*StoreScene.gameObject.SetActive(false);
         StudioScene.gameObject.SetActive(true);
         UIManager.Instance.SetStudioMode(_currentClient);
