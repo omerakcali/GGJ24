@@ -14,12 +14,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float LineDelta = 1.75f;
     
     public List<GameDayInfo> Days;
+
+    public ClientCharacter CurrentClient => _currentClient;
     
     private int _currentDay = 0;
-
     private Queue<ClientCharacter> _clientQueue = new();
-    private ClientCharacter _lastClient;
-    
+    private ClientCharacter _currentClient;
+
+    public static GameManager Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     [Button]
     private void StartDay()
     {
@@ -38,12 +46,12 @@ public class GameManager : MonoBehaviour
     [Button()]
     private void BringNextClient()
     {
-        if(_lastClient != null)
-            Destroy(_lastClient.gameObject);
-        _lastClient = _clientQueue.Dequeue();
-        _lastClient.transform.DOMove(ClientPosition.transform.position, 1f).OnStart(() =>
+        if(_currentClient != null)
+            Destroy(_currentClient.gameObject);
+        _currentClient = _clientQueue.Dequeue();
+        _currentClient.transform.DOMove(ClientPosition.transform.position, 1f).OnStart(() =>
         {
-            _lastClient.transform.DOScale(1f, 1f);
+            _currentClient.transform.DOScale(1f, 1f);
         }).OnComplete(()=>UIManager.Instance.Show());
 
         foreach (var queueClient in _clientQueue)
@@ -51,13 +59,20 @@ public class GameManager : MonoBehaviour
             queueClient.transform.DOMoveX(queueClient.transform.position.x - LineDelta, 1f);
         }
     }
-
-    public void StartPhotoshoot()
+    public void StartStudioMode()
     {
         StoreScene.gameObject.SetActive(false);
         StudioScene.gameObject.SetActive(true);
-        UIManager.Instance.SetStudioMode();
+        UIManager.Instance.SetStudioMode(_currentClient);
         SetQueueVisibility(false);
+    }
+
+    public void StartPhotoshoot()
+    {
+        /*StoreScene.gameObject.SetActive(false);
+        StudioScene.gameObject.SetActive(true);
+        UIManager.Instance.SetStudioMode(_currentClient);
+        SetQueueVisibility(false);*/
     }
 
     public void SetQueueVisibility(bool state)

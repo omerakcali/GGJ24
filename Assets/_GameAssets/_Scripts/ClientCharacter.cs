@@ -60,6 +60,48 @@ public class ClientCharacter : MonoBehaviour
     {
         SwitchExpression(ExpressionType.Positive);
     }
+
+    public void Equip(int id)
+    {
+        foreach (var slot in Slots)
+        {
+            if (slot.HasAccessory(id))
+            {
+                slot.Equip(id);
+                return;
+            }
+        }
+    }
+
+    public List<Accessory> GetAllAccessories()
+    {
+        List<Accessory> list = new();
+        foreach (var slot in Slots)
+        {
+            foreach (var acc in slot.Accessories)
+            {
+                list.Add(acc);
+            }
+        }
+
+        return list;
+    }
+
+    public List<Accessory> GetNotEquippedAccessories()
+    {
+        
+        List<Accessory> list = new();
+        foreach (var slot in Slots)
+        {
+            foreach (var acc in slot.Accessories)
+            {
+                if(!acc.State)
+                    list.Add(acc);
+            }
+        }
+
+        return list;
+    }
 }
 
 [Serializable]
