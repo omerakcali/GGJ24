@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
             character.transform.position = LinePosition.position + Vector3.right * i * LineDelta;
             character.transform.localScale = Vector3.one*.35f;
         }
+        UIManager.Instance.Hide(instant:true);
+        UIManager.Instance.SetStoreMode();
     }
 
     [Button()]
@@ -42,11 +44,28 @@ public class GameManager : MonoBehaviour
         _lastClient.transform.DOMove(ClientPosition.transform.position, 1f).OnStart(() =>
         {
             _lastClient.transform.DOScale(1f, 1f);
-        });
+        }).OnComplete(()=>UIManager.Instance.Show());
 
         foreach (var queueClient in _clientQueue)
         {
             queueClient.transform.DOMoveX(queueClient.transform.position.x - LineDelta, 1f);
         }
+    }
+
+    public void StartPhotoshoot()
+    {
+        StoreScene.gameObject.SetActive(false);
+        StudioScene.gameObject.SetActive(true);
+        UIManager.Instance.SetStudioMode();
+        SetQueueVisibility(false);
+    }
+
+    public void SetQueueVisibility(bool state)
+    {
+        foreach (var queuedClient in _clientQueue)
+        {
+            queuedClient.gameObject.SetActive(state);
+        }
+        
     }
 }
