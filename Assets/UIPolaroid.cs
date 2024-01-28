@@ -9,6 +9,7 @@ public class UIPolaroid : MonoBehaviour
 {
     [SerializeField] private Image Content;
     [SerializeField] private CanvasGroup RootCanvasGroup;
+    [SerializeField] private List<Image> Stars;
 
     public void Initialize(Texture2D texture)
     {
@@ -24,5 +25,15 @@ public class UIPolaroid : MonoBehaviour
         { 
             transform.DOScale(1f, .5f);
         }).OnComplete(onComplete.Invoke);
+    }
+
+    public void DisplayScore(float score)
+    {
+        Debug.Log(score);
+        int starCount = Mathf.CeilToInt(score * 5);
+        for (int i = 0; i < starCount; i++)
+        {
+            Stars[i].gameObject.SetActive(true);
+        }
     }
 }

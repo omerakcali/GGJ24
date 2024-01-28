@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
     [Button()]
     private void BringNextClient()
     {
+        //todo if no client finish day
         if(_currentClient != null)
             Destroy(_currentClient.gameObject);
         _currentClient = _clientQueue.Dequeue();
@@ -78,6 +79,8 @@ public class GameManager : MonoBehaviour
 
     public void SetStoreMode()
     {
+        SetQueueVisibility(true);
+
         MainCamera.gameObject.SetActive(true);
         PhotoCamera.gameObject.SetActive(false);
         CameraTarget.Disable();
@@ -125,6 +128,7 @@ public class GameManager : MonoBehaviour
         var photo = Photo.GetLastPhoto();
         var polaroid = Instantiate(PolaroidPrefab,PolaroidAnimationParent);
         polaroid.Initialize(photo);
+        polaroid.DisplayScore(CurrentClient.CalculateCurrentScore());
         polaroid.PlayShowAnimation(OnShowAnimComplete);
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         yield return new WaitUntil(() => Input.GetMouseButtonUp(0));
