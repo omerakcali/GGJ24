@@ -35,11 +35,16 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        ShowStartMenu();
     }
 
-    [Button]
-    private void StartDay()
+    public void StartDay()
     {
+        foreach (var polaroid in _savedPolaroids)
+        {
+            Destroy(polaroid.gameObject);
+        }
+        
         _savedPolaroids = new();
         var day = Days[_currentDay];
         for (int i = 0; i < day.Characters.Count; i++)
@@ -58,7 +63,12 @@ public class GameManager : MonoBehaviour
     [Button()]
     private void BringNextClient()
     {
-        //todo if no client finish day
+        if(_clientQueue.Count ==0)
+        {
+            _currentDay++;
+            ShowDayEndScreen();
+            return;
+        }
         if(_currentClient != null)
             Destroy(_currentClient.gameObject);
         _currentClient = _clientQueue.Dequeue();
@@ -74,6 +84,23 @@ public class GameManager : MonoBehaviour
         foreach (var queueClient in _clientQueue)
         {
             queueClient.transform.DOMoveX(queueClient.transform.position.x - LineDelta, 1f);
+        }
+    }
+
+    private void ShowStartMenu()
+    {
+        UIManager.Instance.SetMainMenuMode();
+    }
+
+    private void ShowDayEndScreen()
+    {
+        //todo if game end set endscreen
+        UIManager.Instance.SetLevelFinishMode();
+
+        foreach (var polaroid in _savedPolaroids)
+        {
+            polaroid.gameObject.SetActive(true);
+            polaroid.transform.localScale = Vector3.one * .5f;
         }
     }
 
@@ -157,5 +184,10 @@ public class GameManager : MonoBehaviour
             queuedClient.gameObject.SetActive(state);
         }
         
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

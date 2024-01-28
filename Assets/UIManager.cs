@@ -11,7 +11,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject StoreSceneRoot;
     [SerializeField] private GameObject StudioSceneRoot;
     [SerializeField] private GameObject PhotoSceneRoot;
-
+    [SerializeField] private GameObject MainMenuRoot;
+    [SerializeField] private GameObject LevelFinish;
+    
     [SerializeField] private CanvasGroup AddItemCanvasGroup;
     [SerializeField] private Transform AddItemPanelClosedPosition;
     [SerializeField] private Transform AddItemPanelOpenPosition;
@@ -55,6 +57,8 @@ public class UIManager : MonoBehaviour
         StudioSceneRoot.SetActive(false);
         PhotoSceneRoot.SetActive(false);
         PolaroidBlackBlocker.SetActive(false);
+        MainMenuRoot.SetActive(false);
+        LevelFinish.SetActive(false);
 
     }
 
@@ -64,6 +68,8 @@ public class UIManager : MonoBehaviour
         StudioSceneRoot.SetActive(true);
         PhotoSceneRoot.SetActive(false);
         PolaroidBlackBlocker.SetActive(false);
+        MainMenuRoot.SetActive(false);
+        LevelFinish.SetActive(false);
         
         TalkButton.gameObject.SetActive(!GameManager.Instance.CurrentClient.DialogueDone);
         PhotoButton.gameObject.SetActive(GameManager.Instance.CurrentClient.DialogueDone);
@@ -125,6 +131,8 @@ public class UIManager : MonoBehaviour
         StoreSceneRoot.SetActive(false);
         StudioSceneRoot.SetActive(false);
         PhotoSceneRoot.SetActive(true);
+        MainMenuRoot.SetActive(false);
+        LevelFinish.SetActive(false);
     }
 
     [SerializeField] private GameObject PolaroidBlackBlocker;
@@ -134,5 +142,28 @@ public class UIManager : MonoBehaviour
         StoreSceneRoot.SetActive(false);
         StudioSceneRoot.SetActive(false);
         PhotoSceneRoot.SetActive(false);
+        MainMenuRoot.SetActive(false);
+        LevelFinish.SetActive(false);
+    }
+
+    public void SetMainMenuMode()
+    {
+        PolaroidBlackBlocker.SetActive(false);
+        StoreSceneRoot.SetActive(false);
+        StudioSceneRoot.SetActive(false);
+        PhotoSceneRoot.SetActive(false);
+        MainMenuRoot.SetActive(true);
+        LevelFinish.SetActive(false);
+    }
+
+    public void SetLevelFinishMode()
+    {
+        
+        PolaroidBlackBlocker.SetActive(false);
+        StoreSceneRoot.SetActive(false);
+        StudioSceneRoot.SetActive(false);
+        PhotoSceneRoot.SetActive(false);
+        MainMenuRoot.SetActive(false);
+        LevelFinish.SetActive(true);
     }
 }

@@ -161,12 +161,12 @@ public class ClientCharacter : MonoBehaviour
     
     private float CalculateFramingScore()
     {
-        return (100 - (_framingDelta)) * FramingScoreMultiplier;
+        return (100 - (_framingDelta)) * 0; //todo fix 0
     }
     
     public float CalculateCurrentScore()
     {
-        var multiplierSum = AccessoryScoreMultiplier + ExpressionScoreMultiplier + FramingScoreMultiplier;
+        var multiplierSum = AccessoryScoreMultiplier + ExpressionScoreMultiplier + 0; //todo fix 0
         var max = multiplierSum * 100;
 
         var current = CalculateAccessoryScore() + CalculateExpressionScore() + CalculateFramingScore();
