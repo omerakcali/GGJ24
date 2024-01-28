@@ -147,6 +147,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3459187818128307655}
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[0].Accessories.Array.data[1]
+      value: 
+      objectReference: {fileID: 3459187818128307655}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: Slots.Array.data[1].Accessories.Array.data[0]
       value: 
       objectReference: {fileID: 8528902139200344163}
@@ -212,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8852115355974002217, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.99
+      value: 5.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -626,7 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00277911595531d4fbbcc896fdd28d36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: 1
+  Id: 2
   ScoreValue: -70
   SpriteRenderer: {fileID: 4749182828796716290}
 --- !u!1 &4253907495401176796 stripped

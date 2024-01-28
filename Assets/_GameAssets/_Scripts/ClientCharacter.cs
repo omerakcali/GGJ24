@@ -29,8 +29,7 @@ public class ClientCharacter : MonoBehaviour
     [SerializeField] private float FramingScoreMultiplier;
     
     [Header("Dialogue")] [HorizontalLine(color: EColor.Orange)]
-    [ResizableTextArea]
-    public string OpeningDialogue;
+    public CharacterDialogueInfo DialogueInfo;
 
     private void Awake()
     {
@@ -208,4 +207,30 @@ public enum ExpressionType
     Negative=0,
     Neutral=50,
     Positive=100
+}
+
+[Serializable]
+public class CharacterDialogueInfo
+{
+    [ResizableTextArea]
+    public string Introduction;
+    public List<DialoguePart> DialogueParts;
+
+}
+[Serializable]
+public class DialoguePart
+{
+    public int Id;
+    
+    [ResizableTextArea]
+    public string CharacterPhrase;
+    public List<DialogueChoice> Choices;
+}
+
+[Serializable]
+public class DialogueChoice
+{
+    [ResizableTextArea]
+    public string Text;
+    public int NextDialogueId;
 }

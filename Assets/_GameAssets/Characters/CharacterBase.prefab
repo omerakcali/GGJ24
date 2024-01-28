@@ -115,7 +115,38 @@ MonoBehaviour:
   ExpressionScoreMultiplier: 1
   FramingCenter: {fileID: 8852115355974002217}
   FramingScoreMultiplier: 1
-  OpeningDialogue: 
+  DialogueInfo:
+    Introduction: "Karakterin ilk ekranda s\xF6yleyece\u011Fi \u015Fey"
+    DialogueParts:
+    - Id: 0
+      CharacterPhrase: "Karakterin S\xF6yleyece\u011Fi \u015Fey"
+      Choices:
+      - Text: "Se\xE7enek 1 -> ID'si 1 olan di\u011Fer dialoguepart'\u0131\u0131
+          tetikler"
+        NextDialogueId: 1
+      - Text: "Se\xE7enek 2 -> D'si 2 olan dialoguepart'\u0131\u0131 tetikler"
+        NextDialogueId: 2
+    - Id: 1
+      CharacterPhrase: "Karakterin S\xF6yleyece\u011Fi \u015Fey"
+      Choices:
+      - Text: "Se\xE7enek 1 -> 3 numaral\u0131 diyalo\u011Fa gider"
+        NextDialogueId: 3
+      - Text: "Se\xE7enek 2 -> Diyalo\u011Fu kapat\u0131r"
+        NextDialogueId: -1
+    - Id: 2
+      CharacterPhrase: "Karakterin S\xF6yleyece\u011Fi \u015Fey"
+      Choices:
+      - Text: "Se\xE7enek 1 -> 3 numaral\u0131 diyalo\u011Fa gider"
+        NextDialogueId: 3
+      - Text: "Se\xE7enek 2 -> Diyalo\u011Fu kapat\u0131r"
+        NextDialogueId: -1
+    - Id: 3
+      CharacterPhrase: "Karakterin S\xF6yleyece\u011Fi \u015Fey"
+      Choices:
+      - Text: "Se\xE7enek 1"
+        NextDialogueId: 1
+      - Text: "Se\xE7enek 2"
+        NextDialogueId: -1
 --- !u!210 &595257994581405651
 SortingGroup:
   m_ObjectHideFlags: 0
