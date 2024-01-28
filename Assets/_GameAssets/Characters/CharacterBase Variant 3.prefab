@@ -224,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[0].Text
-      value: I bet you got a pretty smile. Can u smile for the camera?
+      value: Can u smile for the camera?
       objectReference: {fileID: 0}
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[1].Text
@@ -281,6 +281,14 @@ PrefabInstance:
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[1].ExpressionModifier
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.data[0].ExpressionModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.data[0].ExpressionModifier
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6982724277852915207, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: m_LocalScale.x
@@ -352,90 +360,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8006949575039534882, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6480254405266773531}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7667730975979792503, guid: 32310e4a429c9a3489437582e303774b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8671537246078715541}
-    - targetCorrespondingSourceObject: {fileID: 7667730975979792503, guid: 32310e4a429c9a3489437582e303774b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1016731529146435817}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32310e4a429c9a3489437582e303774b, type: 3}
 --- !u!4 &4772030580646091828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8006949575039534882, guid: 32310e4a429c9a3489437582e303774b, type: 3}
   m_PrefabInstance: {fileID: 3253796514899974934}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5138200365770781537 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7667730975979792503, guid: 32310e4a429c9a3489437582e303774b, type: 3}
-  m_PrefabInstance: {fileID: 3253796514899974934}
-  m_PrefabAsset: {fileID: 0}
---- !u!60 &8671537246078715541
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5138200365770781537}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
-  m_UseDelaunayMesh: 0
---- !u!114 &1016731529146435817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5138200365770781537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00277911595531d4fbbcc896fdd28d36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Id: 1
-  ScoreValue: 0
-  SpriteRenderer: {fileID: 0}
-  Icon: {fileID: 0}
 --- !u!1001 &5675005052654448581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -576,7 +507,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2689671030711891095}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -776,7 +707,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4242331085465768656}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:

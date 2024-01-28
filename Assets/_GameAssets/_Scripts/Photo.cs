@@ -7,9 +7,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Photo : MonoBehaviour
 {
-    [Header("Photo Taker")] [SerializeField]
-    private Image photoDisplayArea;
-
     [SerializeField] private RectTransform PhotoCaptureFrame;
     [SerializeField] private Image FlashImage;
     

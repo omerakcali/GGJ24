@@ -29,6 +29,7 @@ public class UIPolaroid : MonoBehaviour
 
     public void DisplayScore(float score)
     {
+        score = Mathf.Clamp(score, 0f, 1f);
         Debug.Log(score);
         int starCount = Mathf.CeilToInt(score * 5);
         for (int i = 0; i < starCount; i++)

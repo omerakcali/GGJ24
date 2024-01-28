@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Day 1
   m_EditorClassIdentifier: 
   Characters:
+  - {fileID: 2017673005608414797, guid: 0058c9aae9cac0c45ad148b130be9076, type: 3}
   - {fileID: 4345832301132367222, guid: 1f4f546ff1639354c9eb2ae7975e809f, type: 3}
-  - {fileID: 4345832301132367222, guid: 1f4f546ff1639354c9eb2ae7975e809f, type: 3}
-  - {fileID: 4345832301132367222, guid: 1f4f546ff1639354c9eb2ae7975e809f, type: 3}
+  - {fileID: 4787034069803561441, guid: 654c22e5534f28840b1cb923836603e8, type: 3}
