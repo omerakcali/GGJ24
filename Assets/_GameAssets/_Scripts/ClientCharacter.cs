@@ -57,22 +57,36 @@ public class ClientCharacter : MonoBehaviour
         _currentFace.gameObject.SetActive(true);
     }
 
-    [Button()]
-    private void TESTMakeSad()
+    public void AddExpressionModifier(int modifier)
     {
-        SwitchExpression(ExpressionType.Negative);
-    }
-    
-    [Button()]
-    private void TESTMakeNeutral()
-    {
-        SwitchExpression(ExpressionType.Neutral);
-    }
-    
-    [Button()]
-    private void TESTMakeHappy()
-    {
-        SwitchExpression(ExpressionType.Positive);
+        int current = 0;
+        switch (_currentFace.Type)
+        {
+            case ExpressionType.Negative:
+                current = -1;
+                break;
+            case ExpressionType.Neutral:
+                current = 0;
+                break;
+            case ExpressionType.Positive:
+                current = 1;
+                break;
+        }
+
+        int newVal = current + modifier;
+        switch (newVal)
+        {
+            case <= -1:
+                SwitchExpression(ExpressionType.Negative);
+                break;
+            case 0:
+                SwitchExpression(ExpressionType.Neutral);
+                break;
+            case >= 1:
+                SwitchExpression(ExpressionType.Positive);
+                break;
+        }
+
     }
 
     public void Equip(int id)
@@ -245,4 +259,6 @@ public class DialogueChoice
     [ResizableTextArea]
     public string Text;
     public int NextDialogueId;
+    public int ExpressionModifier;
+    public string AnimationCase;
 }

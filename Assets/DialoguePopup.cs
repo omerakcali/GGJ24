@@ -76,6 +76,7 @@ public class DialoguePopup : MonoBehaviour
             return;
         }
 
+        GameManager.Instance.CurrentClient.AddExpressionModifier(currentChoice.ExpressionModifier);
         var nextInfo = _currentDialogueInfo.GetDialoguePartById(currentChoice.NextDialogueId);
         if (nextInfo == null)
         {
