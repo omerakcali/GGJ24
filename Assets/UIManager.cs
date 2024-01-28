@@ -115,4 +115,12 @@ public class UIManager : MonoBehaviour
         StudioSceneRoot.SetActive(false);
         PhotoSceneRoot.SetActive(true);
     }
+
+    public void SetShowingPolaroidMode()
+    {
+        StoreSceneRoot.SetActive(false);
+        StudioSceneRoot.SetActive(false);
+        PhotoSceneRoot.SetActive(false);
+        
+    }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -9,54 +10,30 @@ public class Photo : MonoBehaviour
     [Header("Photo Taker")] [SerializeField]
     private Image photoDisplayArea;
 
-    [SerializeField] private GameObject photoFrame;
+    [SerializeField] private RectTransform PhotoCaptureFrame;
+    [SerializeField] private Image FlashImage;
     
-    private Texture2D screenCapture;
-    private bool viewingPhoto;
+    private Texture2D _lastPhoto;
+    private List<Texture2D> _photos = new();
 
-    void Start()
+    public IEnumerator CapturePhoto()
     {
-        screenCapture = new Texture2D(700, 700, TextureFormat.RGB24, false);
-    }
-
-    [Button()]
-    private void TakePhoto()
-    {
-        if (!viewingPhoto)
-        {
-            StartCoroutine(CapturePhoto());
-        }
-        else
-        {
-            RemovePhoto();
-        }
-    }
-    IEnumerator CapturePhoto()
-    {
-        viewingPhoto = true;
-        
+        _lastPhoto = new Texture2D(700, 700, TextureFormat.RGB24, false);
+        PhotoCaptureFrame.gameObject.SetActive(false);
         yield return new WaitForEndOfFrame();
+        Rect rect = new Rect(PhotoCaptureFrame.position, PhotoCaptureFrame.rect.size);
+        _lastPhoto.ReadPixels(rect,0,0,false);
+        _lastPhoto.Apply();
+        _photos.Add(_lastPhoto);
+        PhotoCaptureFrame.gameObject.SetActive(true);
+        FlashImage.color = Color.white;
+        yield return new WaitForSeconds(0.05f);
+        FlashImage.color = Color.clear;
 
-        Rect regionToRead = new Rect(0, 0, 700, 700);
-        screenCapture.ReadPixels(regionToRead,0,0,false);
-        screenCapture.Apply();
-        ShowPhoto();
     }
 
-    void ShowPhoto()
+    public Texture2D GetLastPhoto()
     {
-        Sprite photoSprite = Sprite.Create(screenCapture,
-            new Rect(0.0f, 0.0f, screenCapture.width, screenCapture.height), new Vector2(0.5f, 0.5f), 100.0f);
-        photoDisplayArea.sprite = photoSprite;
-        photoDisplayArea.DOFade(1f, .5f).From(0f);
-        photoFrame.SetActive(true);
-    }
-
-    void RemovePhoto()
-    {
-        viewingPhoto = false;
-        photoFrame.SetActive(false);
-        
-        // UI 
+        return _lastPhoto;
     }
 }

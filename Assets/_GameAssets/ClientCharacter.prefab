@@ -89,7 +89,9 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     EmptyScoreValue: 0
-  AccessoryScoreMultiplier: 0
+  AccessoryScoreMultiplier: 1
   DesiredExpressionType: 1
-  ExpressionScoreMultiplier: 0
+  ExpressionScoreMultiplier: 1
+  FramingCenter: {fileID: 0}
+  FramingScoreMultiplier: 1
   OpeningDialogue: 

@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera MainCamera;
     [SerializeField] private CinemachineVirtualCamera PhotoCamera;
     [SerializeField] private CameraTargetMovement CameraTarget;
+    [SerializeField] private Photo Photo;
+    [SerializeField] private UIPolaroid PolaroidPrefab;
+    [SerializeField] private Transform PolaroidAnimationParent;
     
     public List<GameDayInfo> Days;
 
@@ -90,6 +93,30 @@ public class GameManager : MonoBehaviour
         SetQueueVisibility(false);*/
     }
 
+    public void ShootPhoto()
+    {
+        StartCoroutine(PhotoRoutine());
+    }
+
+    private IEnumerator PhotoRoutine()
+    {
+        UIManager.Instance.Hide();
+        yield return Photo.CapturePhoto();
+        yield return new WaitForSeconds(.25f);
+        var photo = Photo.GetLastPhoto();
+        var polaroid = Instantiate(PolaroidPrefab,PolaroidAnimationParent);
+        polaroid.Initialize(photo);
+        polaroid.PlayShowAnimation(OnShowAnimComplete);
+        yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+        yield return new WaitUntil(() => Input.GetMouseButtonUp(0));
+        Destroy(polaroid.gameObject);
+        void OnShowAnimComplete()
+        {
+            UIManager.Instance.SetShowingPolaroidMode();
+            UIManager.Instance.Show();
+        }
+    }
+    
     public void SetQueueVisibility(bool state)
     {
         foreach (var queuedClient in _clientQueue)
