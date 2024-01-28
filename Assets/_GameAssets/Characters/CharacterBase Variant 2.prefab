@@ -9,8 +9,190 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: DesiredExpressionType
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: FramingScoreMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: AccessoryScoreMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[0].Name
+      value: Scarf
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[1].Name
+      value: Bottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[2].Name
+      value: Cigarette
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.Introduction
+      value: Hey there, lens jockey. I'm Bender a rusty relic with a knack for ruining
+        everything, especially my own life. My marriage is toast,  and I've been
+        stuck in this pit of despair so long that rust is starting  to feel like
+        home. I need a photo, I guess. Something to send to my  kids, just so they
+        remember they had a defective dad once.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: ExpressionScoreMultiplier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[0].Accessories.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[1].Accessories.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[2].Accessories.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Id
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[4].Id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[0].Accessories.Array.data[0]
+      value: 
+      objectReference: {fileID: 8970885031710539641}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[1].Accessories.Array.data[0]
+      value: 
+      objectReference: {fileID: 9188359395345747562}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[2].Accessories.Array.data[0]
+      value: 
+      objectReference: {fileID: 94215906360816531}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].CharacterPhrase
+      value: Hey there, lens jockey. I'm Bender a rusty relic with a knack for ruining
+        everything, especially my own life. My marriage is toast,  and I've been
+        stuck in this pit of despair so long that rust is starting  to feel like
+        home. I need a photo, I guess. Something to send to my  kids, just so they
+        remember they had a defective dad once.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].CharacterPhrase
+      value: Wish I could change? Oh, I don't know, maybe not getting married in
+        the first place. That'd be a start.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].CharacterPhrase
+      value: Gears turning smoothly? Please, my gears are so well-lubricated, they
+        could bend steel without breaking a sweat.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].CharacterPhrase
+      value: '"Triumphs? There''s so many it''s hard to choose. But let me tell you
+        about the time I bent a titanium girder into a statue of myself.  Classic!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[4].CharacterPhrase
+      value: '"Triumphs? There''s so many it''s hard to choose. But let me tell you
+        about the time I bent a titanium girder into a statue of myself.  Classic!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Choices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[0].Text
+      value: Reflecting on the past can bring up tough memories. Anything you wish
+        you could change?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[1].Text
+      value: Sometimes it's hard to tell if the gears are turning smoothly or grinding.
+        How's your gear alignment today?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[2].Text
+      value: Recall a moment when your bending skills triumphed over adversity. Any
+        favorite bending triumphs?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.data[0].Text
+      value: "Well, Bender, life's full of twists and turns. No marriage, no bending
+        arm mishaps\u2014where's the fun in that? Your quirks make you, well, you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.data[0].Text
+      value: "Lubricated gears and bending steel \u2013 classic Bender. Wouldn't
+        have it any other way. Keep the gears turning, buddy."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Choices.Array.data[0].Text
+      value: A statue, huh? You truly are one-of-a-kind, Bender. Your triumphs make
+        for the best stories. Share more anytime!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[0].NextDialogueId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[1].NextDialogueId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[2].NextDialogueId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.data[0].NextDialogueId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.data[0].NextDialogueId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Choices.Array.data[0].NextDialogueId
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6982724277852915207, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: m_LocalScale.x
@@ -71,6 +253,10 @@ PrefabInstance:
     - target: {fileID: 7667730975979792503, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: m_Name
       value: CharacterBase Variant 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7667730975979792503, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8852115355974002217, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: m_LocalPosition.x
