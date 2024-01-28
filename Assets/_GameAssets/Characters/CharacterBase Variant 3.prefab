@@ -112,7 +112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: DesiredExpressionType
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: Slots.Array.data[0].Name
@@ -121,6 +121,11 @@ PrefabInstance:
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: Slots.Array.data[1].Name
       value: Face
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.Introduction
+      value: Hi there! I'm Breeze, but you can call me Bree. I'm here for my graduation
+        photograph. Hope you can capture my good side...
       objectReference: {fileID: 0}
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: ExpressionScoreMultiplier
@@ -135,12 +140,36 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: Slots.Array.data[0].Accessories.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: Slots.Array.data[1].Accessories.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Id
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[4].Id
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: Slots.Array.data[0].Accessories.Array.data[0]
@@ -154,6 +183,101 @@ PrefabInstance:
       propertyPath: Slots.Array.data[1].Accessories.Array.data[0]
       value: 
       objectReference: {fileID: 8528902139200344163}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].CharacterPhrase
+      value: I'm here for my graduation photograph. Hope you can capture my good
+        side.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].CharacterPhrase
+      value: No, I don't want to smile. I mean I know you are good at your work but...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].CharacterPhrase
+      value: Excited? Oh yeah, I can barely contain my enthusiasm. It's like waiting
+        for a dentist appointment...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].CharacterPhrase
+      value: Oh, sure, I'll flash my award-winning smile... if by 'award-winning'
+        you mean 'most likely to scare small children.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[4].CharacterPhrase
+      value: "Karakterin S\xF6yleyece\u011Fi \u015Fey"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Choices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[4].Choices.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[0].Text
+      value: I bet you got a pretty smile. Can u smile for the camera?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[1].Text
+      value: You look excited.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.data[0].Text
+      value: 'I bet you got a pretty smile. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.data[0].Text
+      value: 'I bet you got a pretty smile. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Choices.Array.data[0].Text
+      value: Okay.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[4].Choices.Array.data[0].Text
+      value: "Se\xE7enek 1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[4].Choices.Array.data[1].Text
+      value: "Se\xE7enek 2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[0].NextDialogueId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[1].NextDialogueId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.data[0].NextDialogueId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.data[0].NextDialogueId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Choices.Array.data[0].NextDialogueId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[4].Choices.Array.data[0].NextDialogueId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[4].Choices.Array.data[1].NextDialogueId
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6982724277852915207, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -224,13 +348,89 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8006949575039534882, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6480254405266773531}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7667730975979792503, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8671537246078715541}
+    - targetCorrespondingSourceObject: {fileID: 7667730975979792503, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1016731529146435817}
   m_SourcePrefab: {fileID: 100100000, guid: 32310e4a429c9a3489437582e303774b, type: 3}
 --- !u!4 &4772030580646091828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8006949575039534882, guid: 32310e4a429c9a3489437582e303774b, type: 3}
   m_PrefabInstance: {fileID: 3253796514899974934}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5138200365770781537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7667730975979792503, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+  m_PrefabInstance: {fileID: 3253796514899974934}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &8671537246078715541
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5138200365770781537}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 1}
+      - {x: -0.95105654, y: 0.30901697}
+      - {x: -0.5877852, y: -0.80901706}
+      - {x: 0.58778536, y: -0.80901694}
+      - {x: 0.9510565, y: 0.30901712}
+  m_UseDelaunayMesh: 0
+--- !u!114 &1016731529146435817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5138200365770781537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00277911595531d4fbbcc896fdd28d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 1
+  ScoreValue: 0
+  SpriteRenderer: {fileID: 0}
 --- !u!1001 &5675005052654448581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -293,7 +493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7519722154212866590, guid: 3b41e5734bd847f45a69512df6cfec56, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -856138430712955627, guid: 3b41e5734bd847f45a69512df6cfec56, type: 3}
       propertyPath: m_Name
@@ -307,9 +507,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Layer 2
       objectReference: {fileID: 0}
+    - target: {fileID: -735985239012028135, guid: 3b41e5734bd847f45a69512df6cfec56, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2632512352545557955, guid: 3b41e5734bd847f45a69512df6cfec56, type: 3}
       propertyPath: m_Name
       value: Layer 6_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632512352545557955, guid: 3b41e5734bd847f45a69512df6cfec56, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7751269498262281042, guid: 3b41e5734bd847f45a69512df6cfec56, type: 3}
       propertyPath: m_Name
