@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7595413430563298066, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -56,14 +60,349 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -856138430712955627, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751269498262281042, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180888311575453899, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -7595413430563298066, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7088534173112471369}
+    - targetCorrespondingSourceObject: {fileID: -856138430712955627, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2375896117532374678}
+    - targetCorrespondingSourceObject: {fileID: 7751269498262281042, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3238706193249150412}
+    - targetCorrespondingSourceObject: {fileID: 7751269498262281042, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8801256820862655776}
+    - targetCorrespondingSourceObject: {fileID: 5902096427375006992, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4533449282676351856}
+    - targetCorrespondingSourceObject: {fileID: 5902096427375006992, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1533976988142848588}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+--- !u!1 &605425107289994582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7751269498262281042, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+  m_PrefabInstance: {fileID: 7202641631200226820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &3238706193249150412
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605425107289994582}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.6210527, y: 1.9052632}
+    newSize: {x: 2.6210527, y: 1.9052632}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.2368422, y: -0.88947374}
+      - {x: 1.2789475, y: -0.8157895}
+      - {x: 1.2789475, y: -0.7421053}
+      - {x: 1.1947368, y: -0.6684211}
+      - {x: 1.0368421, y: -0.5631579}
+      - {x: 0.88947374, y: -0.4368421}
+      - {x: 0.7421053, y: -0.33157897}
+      - {x: 0.46842107, y: -0.19473685}
+      - {x: 0.28947368, y: -0.015789475}
+      - {x: 0.39473686, y: 0.1}
+      - {x: 0.45789474, y: 0.27894738}
+      - {x: 0.46842107, y: 0.44736844}
+      - {x: 0.37368423, y: 0.51052636}
+      - {x: 0.20526317, y: 0.34210527}
+      - {x: 0.18421054, y: 0.3}
+      - {x: 0.14210527, y: 0.13157895}
+      - {x: 0.05789474, y: 0.18421054}
+      - {x: -0.12105264, y: 0.33157897}
+      - {x: -0.23684211, y: 0.39473686}
+      - {x: -0.2263158, y: 0.51052636}
+      - {x: -0.3526316, y: 0.63684213}
+      - {x: -0.44736844, y: 0.72105265}
+      - {x: -0.6052632, y: 0.731579}
+      - {x: -0.7631579, y: 0.9421053}
+      - {x: -0.8263158, y: 0.9421053}
+      - {x: -0.8473685, y: 0.931579}
+      - {x: -0.8473685, y: 0.64736843}
+      - {x: -0.9210527, y: 0.6894737}
+      - {x: -0.96315795, y: 0.6789474}
+      - {x: -1.0157895, y: 0.6578948}
+      - {x: -1.0157895, y: 0.44736844}
+      - {x: -0.98421055, y: 0.3526316}
+      - {x: -1.2052633, y: 0.3526316}
+      - {x: -1.3000001, y: 0.3}
+      - {x: -1.3000001, y: 0.27894738}
+      - {x: -1.2894738, y: 0.25789475}
+      - {x: -1.1842105, y: 0.12105264}
+      - {x: -1.0684211, y: 0.047368422}
+      - {x: -1.1421053, y: -0.036842108}
+      - {x: -1.1842105, y: -0.15263158}
+      - {x: -1.1947368, y: -0.3}
+      - {x: -1.1421053, y: -0.34210527}
+      - {x: -0.96315795, y: -0.33157897}
+      - {x: -0.70000005, y: -0.4368421}
+      - {x: -0.5947369, y: -0.54210526}
+      - {x: -0.53157896, y: -0.5}
+      - {x: -0.4894737, y: -0.3526316}
+      - {x: -0.37368423, y: -0.32105264}
+      - {x: -0.2263158, y: -0.34210527}
+      - {x: -0.21578948, y: -0.18421054}
+      - {x: -0.27894738, y: -0.05789474}
+      - {x: 0.036842108, y: -0.24736843}
+      - {x: -0.005263158, y: -0.37368423}
+      - {x: 0.005263158, y: -0.52105266}
+      - {x: 0.036842108, y: -0.5842106}
+      - {x: 0.1, y: -0.72105265}
+      - {x: 0.15263158, y: -0.731579}
+      - {x: 0.24736843, y: -0.6052632}
+      - {x: 0.34210527, y: -0.41578948}
+      - {x: 0.4789474, y: -0.53157896}
+      - {x: 0.62631583, y: -0.6894737}
+      - {x: 0.79473686, y: -0.9210527}
+      - {x: 0.8263158, y: -0.931579}
+      - {x: 0.90000004, y: -0.931579}
+      - {x: 0.931579, y: -0.88947374}
+      - {x: 0.9421053, y: -0.7631579}
+      - {x: 1.1210526, y: -0.8578948}
+    - - {x: -0.2263158, y: -0.37368423}
+      - {x: -0.19473685, y: -0.3631579}
+      - {x: -0.19473685, y: -0.33157897}
+      - {x: -0.2263158, y: -0.32105264}
+      - {x: -0.24736843, y: -0.34210527}
+    - - {x: 0.06842106, y: -0.047368422}
+      - {x: 0.036842108, y: -0.047368422}
+      - {x: 0.036842108, y: -0.05789474}
+      - {x: 0.047368422, y: -0.047368422}
+      - {x: 0.015789475, y: -0.015789475}
+      - {x: -0.08947369, y: 0.036842108}
+      - {x: -0.12105264, y: 0.047368422}
+      - {x: -0.15263158, y: 0.047368422}
+      - {x: -0.12105264, y: 0.07894737}
+      - {x: -0.11052632, y: 0.047368422}
+      - {x: -0.07894737, y: 0.05789474}
+      - {x: 0.005263158, y: -0.005263158}
+      - {x: 0.015789475, y: -0.005263158}
+      - {x: 0.07894737, y: -0.06842106}
+      - {x: 0.08947369, y: -0.06842106}
+      - {x: 0.08947369, y: -0.05789474}
+  m_UseDelaunayMesh: 0
+--- !u!114 &8801256820862655776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605425107289994582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00277911595531d4fbbcc896fdd28d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 2
+  ScoreValue: -30
+  SpriteRenderer: {fileID: 9185445981774414162}
+--- !u!1 &1723346784700994321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -856138430712955627, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+  m_PrefabInstance: {fileID: 7202641631200226820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2375896117532374678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723346784700994321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cb1cb4620249b4198ef77b1712b2f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 100
+--- !u!1 &3610929265579342612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5902096427375006992, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+  m_PrefabInstance: {fileID: 7202641631200226820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &4533449282676351856
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3610929265579342612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.4105263, y: 1.8736842}
+    newSize: {x: 1.4105263, y: 1.8736842}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.094736844, y: -0.6210527}
+      - {x: 0.073684216, y: -0.55789477}
+      - {x: 0.042105265, y: -0.47368422}
+      - {x: -0.0631579, y: -0.41052634}
+      - {x: 0.010526316, y: -0.3263158}
+      - {x: 0.08421053, y: -0.16842106}
+      - {x: 0.16842106, y: -0.03157895}
+      - {x: 0.55789477, y: 0.6421053}
+      - {x: 0.66315794, y: 0.8210527}
+      - {x: 0.66315794, y: 0.9052632}
+      - {x: 0.6526316, y: 0.9157895}
+      - {x: 0.4, y: 0.9157895}
+      - {x: 0.33684212, y: 0.8526316}
+      - {x: 0.094736844, y: 0.41052634}
+      - {x: -0.11578948, y: 0.03157895}
+      - {x: -0.15789475, y: 0.11578948}
+      - {x: -0.30526316, y: 0.4421053}
+      - {x: -0.33684212, y: 0.5263158}
+      - {x: -0.3894737, y: 0.6105263}
+      - {x: -0.5368421, y: 0.7052632}
+      - {x: -0.5894737, y: 0.8210527}
+      - {x: -0.631579, y: 0.8842106}
+      - {x: -0.68421054, y: 0.8947369}
+      - {x: -0.7052632, y: 0.8842106}
+      - {x: -0.7052632, y: 0.8}
+      - {x: -0.57894737, y: 0.47368422}
+      - {x: -0.48421055, y: 0.22105265}
+      - {x: -0.3894737, y: -0.010526316}
+      - {x: -0.2526316, y: -0.3263158}
+      - {x: -0.2526316, y: -0.41052634}
+      - {x: -0.3263158, y: -0.46315792}
+      - {x: -0.4, y: -0.55789477}
+      - {x: -0.4, y: -0.74736845}
+      - {x: -0.37894738, y: -0.83157897}
+      - {x: -0.30526316, y: -0.8947369}
+      - {x: -0.22105265, y: -0.92631584}
+      - {x: -0.08421053, y: -0.92631584}
+      - {x: -0.021052632, y: -0.9157895}
+      - {x: 0.042105265, y: -0.8736842}
+      - {x: 0.094736844, y: -0.8105264}
+      - {x: 0.10526316, y: -0.7052632}
+  m_UseDelaunayMesh: 0
+--- !u!114 &1533976988142848588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3610929265579342612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00277911595531d4fbbcc896fdd28d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 1
+  ScoreValue: -20
+  SpriteRenderer: {fileID: 3670039103522114250}
+--- !u!212 &3670039103522114250 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5844112632056620238, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+  m_PrefabInstance: {fileID: 7202641631200226820}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8420388164336932826 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+  m_PrefabInstance: {fileID: 7202641631200226820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8458683540268780266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7595413430563298066, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+  m_PrefabInstance: {fileID: 7202641631200226820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7088534173112471369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8458683540268780266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cb1cb4620249b4198ef77b1712b2f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 50
+--- !u!212 &9185445981774414162 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: -7165880034659061930, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
   m_PrefabInstance: {fileID: 7202641631200226820}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8307186689466303674
@@ -74,6 +413,181 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DesiredExpressionType
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: FramingScoreMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: AccessoryScoreMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[0].Name
+      value: Hand
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[1].Name
+      value: Medal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.Introduction
+      value: In the world of boxing, I'm not just a fighter; I'm a walking spectacle.
+        With four arms, a perpetual grin, and a track record of triumphs, I'm  Smirk
+        Dynamo, your undefeated and ever-smiling champion.As the big match approaches,
+        I need a serious photo to match the intensity in the ring.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: ExpressionScoreMultiplier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[0].EmptyScoreValue
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[1].EmptyScoreValue
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[0].Accessories.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[1].Accessories.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Id
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Id
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[0].Accessories.Array.data[0]
+      value: 
+      objectReference: {fileID: 8801256820862655776}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: Slots.Array.data[1].Accessories.Array.data[0]
+      value: 
+      objectReference: {fileID: 1533976988142848588}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].CharacterPhrase
+      value: In the world of boxing, I'm not just a fighter; I'm a walking spectacle.
+        With four arms, a perpetual grin, and a track record of triumphs, I'm  Smirk
+        Dynamo, your undefeated and ever-smiling champion.As the big match approaches,
+        I need a serious photo to match the intensity in the ring.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].CharacterPhrase
+      value: Haha! Laughter as powerful as my punches? You bet! Let's turn that joy
+        into a visual masterpiece. I'm ready to channel the positivity, and I  guarantee
+        this photo will be a beaming testament to the happiness I  bring to the ring.
+        Click away, photographer!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].CharacterPhrase
+      value: Balanced look, you say? I'm all for it. A focused champion is a dangerous
+        one, after all. Let's capture that unwavering determination,  that calm before
+        the storm. This photo is going to scream readiness and a  touch of mystery.
+        Ready when you are!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].CharacterPhrase
+      value: Behind every grin, there's a tale to tell, my friend. I'm game for sharing
+        a piece of the journey. Let's capture the raw, the real, the  struggles and
+        triumphs that have shaped this smiling champion. Get that  lens ready for
+        a story worth telling.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Choices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[0].Text
+      value: I've heard your laughter is as powerful as your punches. Let's channel
+        that joy into the frame and create a photo that radiates positivity!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[1].Text
+      value: "For this photo, let's maintain a balanced look. Not too happy, not
+        too sad\u2014just a snapshot of the focused champion ready to conquer the
+        ring."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[2].Text
+      value: Behind every smile, there's a unique story. If you're comfortable sharing,
+        let's capture a more reflective side, a moment that speaks to  the struggles
+        and triumphs.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.data[0].Text
+      value: Great session! Your positivity is infectious. Good luck in the ring,
+        and remember, the photos will be here whenever you need them!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.data[0].Text
+      value: Awesome shots! Your determination really came through. Best of luck
+        in your next match, and feel free to drop by for more photos anytime!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Choices.Array.data[0].Text
+      value: Thanks for letting me capture your story. Take these moments with you
+        into the ring. Looking forward to the next session. Until then, take care!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[0].NextDialogueId
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[1].NextDialogueId
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[2].NextDialogueId
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.data[0].NextDialogueId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.data[0].NextDialogueId
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[3].Choices.Array.data[0].NextDialogueId
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6982724277852915207, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -133,6 +647,14 @@ PrefabInstance:
     - target: {fileID: 7667730975979792503, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: m_Name
       value: CharacterBase Variant 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852115355974002217, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852115355974002217, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
