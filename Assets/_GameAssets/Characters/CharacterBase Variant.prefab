@@ -153,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7595413430563298066, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -360,6 +360,7 @@ MonoBehaviour:
   Id: 1
   ScoreValue: 100
   SpriteRenderer: {fileID: 5070916591988248688}
+  Icon: {fileID: 3635688981534902791, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!4 &2247596556322442525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
@@ -514,6 +515,7 @@ MonoBehaviour:
   Id: 2
   ScoreValue: -40
   SpriteRenderer: {fileID: 1676961350656472711}
+  Icon: {fileID: -5550123183624005409, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!1001 &6708142299459650387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -683,6 +685,14 @@ PrefabInstance:
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: DialogueInfo.DialogueParts.Array.data[3].Choices.Array.data[0].NextDialogueId
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[0].ExpressionModifier
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[2].ExpressionModifier
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6982724277852915207, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: m_LocalScale.x

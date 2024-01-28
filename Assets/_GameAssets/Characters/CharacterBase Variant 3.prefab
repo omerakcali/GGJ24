@@ -278,6 +278,10 @@ PrefabInstance:
       propertyPath: DialogueInfo.DialogueParts.Array.data[4].Choices.Array.data[1].NextDialogueId
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[1].ExpressionModifier
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6982724277852915207, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -431,6 +435,7 @@ MonoBehaviour:
   Id: 1
   ScoreValue: 0
   SpriteRenderer: {fileID: 0}
+  Icon: {fileID: 0}
 --- !u!1001 &5675005052654448581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -707,6 +712,7 @@ MonoBehaviour:
   Id: 1
   ScoreValue: -30
   SpriteRenderer: {fileID: 5930120392950071443}
+  Icon: {fileID: -1516689466908542024, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!1 &4242331085465768656 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -856138430712955627, guid: 3b41e5734bd847f45a69512df6cfec56, type: 3}
@@ -841,6 +847,7 @@ MonoBehaviour:
   Id: 2
   ScoreValue: -70
   SpriteRenderer: {fileID: 4749182828796716290}
+  Icon: {fileID: 3635688981534902791, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!1 &4253907495401176796 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -735985239012028135, guid: 3b41e5734bd847f45a69512df6cfec56, type: 3}

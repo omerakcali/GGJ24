@@ -327,6 +327,7 @@ MonoBehaviour:
   Id: 3
   ScoreValue: 75
   SpriteRenderer: {fileID: 8207554877374996465}
+  Icon: {fileID: -3282096499778630885, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!212 &3627961814598133986 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -7165880034659061930, guid: 55d14358dfa55ce48a211c7a799b2006, type: 3}
@@ -1062,6 +1063,7 @@ MonoBehaviour:
   Id: 1
   ScoreValue: 50
   SpriteRenderer: {fileID: 3627961814598133986}
+  Icon: {fileID: -4073488038225913143, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!212 &5397768553138529967 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 7222661070148608283, guid: 55d14358dfa55ce48a211c7a799b2006, type: 3}
@@ -1287,6 +1289,7 @@ MonoBehaviour:
   Id: 2
   ScoreValue: -50
   SpriteRenderer: {fileID: 5397768553138529967}
+  Icon: {fileID: -5550123183624005409, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!1 &6565671340762289837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -735985239012028135, guid: 55d14358dfa55ce48a211c7a799b2006, type: 3}
@@ -1490,6 +1493,30 @@ PrefabInstance:
     - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: DialogueInfo.DialogueParts.Array.data[3].Choices.Array.data[0].NextDialogueId
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[0].ExpressionModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[0].Choices.Array.data[1].ExpressionModifier
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.data[0].ExpressionModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[1].Choices.Array.data[1].ExpressionModifier
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.data[0].ExpressionModifier
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542072690773554523, guid: 32310e4a429c9a3489437582e303774b, type: 3}
+      propertyPath: DialogueInfo.DialogueParts.Array.data[2].Choices.Array.data[1].ExpressionModifier
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6982724277852915207, guid: 32310e4a429c9a3489437582e303774b, type: 3}
       propertyPath: m_LocalScale.x
