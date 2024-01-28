@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
     [Button]
     private void StartDay()
     {
+        _savedPolaroids = new();
         var day = Days[_currentDay];
         for (int i = 0; i < day.Characters.Count; i++)
         {
@@ -49,7 +50,9 @@ public class GameManager : MonoBehaviour
             character.transform.localScale = Vector3.one*.75f;
         }
         UIManager.Instance.Hide(instant:true);
-        UIManager.Instance.SetStoreMode();
+        SetStoreMode();
+
+        DOVirtual.DelayedCall(.75f, BringNextClient);
     }
 
     [Button()]
@@ -72,6 +75,18 @@ public class GameManager : MonoBehaviour
             queueClient.transform.DOMoveX(queueClient.transform.position.x - LineDelta, 1f);
         }
     }
+
+    public void SetStoreMode()
+    {
+        MainCamera.gameObject.SetActive(true);
+        PhotoCamera.gameObject.SetActive(false);
+        CameraTarget.Disable();
+        StoreScene.gameObject.SetActive(true);
+        StudioScene.gameObject.SetActive(false);
+        
+        UIManager.Instance.SetStoreMode();
+    }
+    
     public void StartStudioMode()
     {
         MainCamera.gameObject.SetActive(true);
@@ -113,12 +128,22 @@ public class GameManager : MonoBehaviour
         polaroid.PlayShowAnimation(OnShowAnimComplete);
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         yield return new WaitUntil(() => Input.GetMouseButtonUp(0));
-        Destroy(polaroid.gameObject);
+        HidePolaroid(polaroid);
+        SetStoreMode();
+        DOVirtual.DelayedCall(.75f, BringNextClient);
+
         void OnShowAnimComplete()
         {
             UIManager.Instance.SetShowingPolaroidMode();
             UIManager.Instance.Show();
         }
+    }
+
+    private List<UIPolaroid> _savedPolaroids = new List<UIPolaroid>();
+    private void HidePolaroid(UIPolaroid polaroid)
+    {
+        polaroid.gameObject.SetActive(false);
+        _savedPolaroids.Add(polaroid);
     }
     
     public void SetQueueVisibility(bool state)

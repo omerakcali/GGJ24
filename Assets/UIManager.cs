@@ -54,6 +54,8 @@ public class UIManager : MonoBehaviour
         StoreSceneRoot.SetActive(true);
         StudioSceneRoot.SetActive(false);
         PhotoSceneRoot.SetActive(false);
+        PolaroidBlackBlocker.SetActive(false);
+
     }
 
     public void SetStudioMode()
@@ -61,6 +63,7 @@ public class UIManager : MonoBehaviour
         StoreSceneRoot.SetActive(false);
         StudioSceneRoot.SetActive(true);
         PhotoSceneRoot.SetActive(false);
+        PolaroidBlackBlocker.SetActive(false);
         
         TalkButton.gameObject.SetActive(!GameManager.Instance.CurrentClient.DialogueDone);
         PhotoButton.gameObject.SetActive(GameManager.Instance.CurrentClient.DialogueDone);
@@ -117,13 +120,17 @@ public class UIManager : MonoBehaviour
 
     public void SetPhotoMode()
     {
+        PolaroidBlackBlocker.SetActive(false);
+
         StoreSceneRoot.SetActive(false);
         StudioSceneRoot.SetActive(false);
         PhotoSceneRoot.SetActive(true);
     }
 
+    [SerializeField] private GameObject PolaroidBlackBlocker;
     public void SetShowingPolaroidMode()
     {
+        PolaroidBlackBlocker.SetActive(true);
         StoreSceneRoot.SetActive(false);
         StudioSceneRoot.SetActive(false);
         PhotoSceneRoot.SetActive(false);
