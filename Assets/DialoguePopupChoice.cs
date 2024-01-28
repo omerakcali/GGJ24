@@ -12,15 +12,23 @@ public class DialoguePopupChoice : MonoBehaviour
     
     private DialoguePopup _popup;
     private DialogueChoice _currentChoice;
-
+    private bool _nextButton;
+    
     private void Awake()
     {
         Button.onClick.AddListener(OnClick);
     }
 
+    public void SetAsNextButton()
+    {
+        gameObject.SetActive(true);
+        _nextButton = true;
+        Text.text = "Continue";
+    }
     private void OnClick()
     {
-        _popup.ChoiceSelected(_currentChoice);
+        if(_nextButton) _popup.Next();
+        else _popup.ChoiceSelected(_currentChoice);
     }
 
     public void SetPopup(DialoguePopup popup)
@@ -30,6 +38,8 @@ public class DialoguePopupChoice : MonoBehaviour
 
     public void Initialize(DialogueChoice choice)
     {
+        _nextButton = false;
+        gameObject.SetActive(true);
         Text.text = choice.Text;
         _currentChoice = choice;
     }

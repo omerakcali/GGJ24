@@ -10,6 +10,8 @@ public class Accessory : MonoBehaviour
     public int ScoreValue;
     [SerializeField] private SpriteRenderer SpriteRenderer;
 
+    public Sprite Icon;
+
     private TextMeshProUGUI a;
     
     public Sprite Sprite => SpriteRenderer.sprite;

@@ -30,6 +30,8 @@ public class ClientCharacter : MonoBehaviour
     
     [Header("Dialogue")] [HorizontalLine(color: EColor.Orange)]
     public CharacterDialogueInfo DialogueInfo;
+    
+    public bool DialogueDone { get; set; }
 
     private void Awake()
     {

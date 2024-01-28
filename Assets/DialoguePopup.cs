@@ -12,15 +12,19 @@ public class DialoguePopup : MonoBehaviour
     
     private CharacterDialogueInfo _currentDialogueInfo;
 
+    public static DialoguePopup Instance;
+    
     private void Awake()
     {
+        Instance = this;
         for (int i = 0; i < Choices.Count; i++)
         {
             Choices[i].SetPopup(this);
+            Choices[i].gameObject.SetActive(false);
         }
+        gameObject.SetActive(false);
     }
-
-
+    
     public void SetDialogueInfo(CharacterDialogueInfo dialogueInfo)
     {
         _currentDialogueInfo = dialogueInfo;
@@ -29,7 +33,8 @@ public class DialoguePopup : MonoBehaviour
     public void ShowIntroduction()
     {
         DialogueText.text = _currentDialogueInfo.Introduction;
-        //todo show okayButton;
+        gameObject.SetActive(true);
+        Choices[0].SetAsNextButton();
     }
 
     public void ShowStudioDialogue()
@@ -39,6 +44,7 @@ public class DialoguePopup : MonoBehaviour
     
     public void SetDialogue(DialoguePart dialoguePart)
     {
+        gameObject.SetActive(true);
         DialogueText.text = dialoguePart.CharacterPhrase;
 
         foreach (var choice in Choices)
@@ -52,13 +58,21 @@ public class DialoguePopup : MonoBehaviour
         }
     }
 
+    public void Next()
+    {
+        GameManager.Instance.StartStudioMode();
+        gameObject.SetActive(false);
+    }
+
     public void ChoiceSelected(DialogueChoice currentChoice)
     {
         //todo handleChoice
         if (currentChoice.NextDialogueId == -1)
         {
             //todo close popup
+            GameManager.Instance.CurrentClient.DialogueDone = true;
             gameObject.SetActive(false);
+            UIManager.Instance.SetStudioMode();
             return;
         }
 

@@ -19,6 +19,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private AccessoryAddButton AccessoryButtonPrefab;
     [SerializeField] private Transform AccessoryButtonParent;
 
+
+    [SerializeField] private Button TalkButton, PhotoButton;
+    
     private List<AccessoryAddButton> _accessoryAddButtons = new();
 
     public static UIManager Instance;
@@ -58,6 +61,9 @@ public class UIManager : MonoBehaviour
         StoreSceneRoot.SetActive(false);
         StudioSceneRoot.SetActive(true);
         PhotoSceneRoot.SetActive(false);
+        
+        TalkButton.gameObject.SetActive(!GameManager.Instance.CurrentClient.DialogueDone);
+        PhotoButton.gameObject.SetActive(GameManager.Instance.CurrentClient.DialogueDone);
         
         RefreshAccessoryButtons();
     }
@@ -121,6 +127,5 @@ public class UIManager : MonoBehaviour
         StoreSceneRoot.SetActive(false);
         StudioSceneRoot.SetActive(false);
         PhotoSceneRoot.SetActive(false);
-        
     }
 }
