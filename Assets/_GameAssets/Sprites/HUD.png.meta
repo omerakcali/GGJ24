@@ -113,10 +113,10 @@ TextureImporter:
       name: HUD_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 526
-        width: 803
-        height: 316
+        x: 52
+        y: 383
+        width: 131
+        height: 137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: HUD_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 180
-        width: 314
-        height: 314
+        x: 58
+        y: 222
+        width: 135
+        height: 147
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: HUD_2
       rect:
         serializedVersion: 2
-        x: 352
-        y: 276
-        width: 146
-        height: 146
+        x: 210
+        y: 258
+        width: 54
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: HUD_3
       rect:
         serializedVersion: 2
-        x: 556
-        y: 324
-        width: 146
-        height: 50
+        x: 294
+        y: 273
+        width: 60
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: HUD_4
       rect:
         serializedVersion: 2
-        x: 784
-        y: 276
-        width: 188
-        height: 136
+        x: 406
+        y: 262
+        width: 76
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: HUD_5
       rect:
         serializedVersion: 2
-        x: 353
-        y: 0
-        width: 188
-        height: 144
+        x: 63
+        y: 126
+        width: 79
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: HUD_6
       rect:
         serializedVersion: 2
-        x: 642
-        y: 0
-        width: 140
-        height: 140
+        x: 185
+        y: 139
+        width: 106
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,6 +252,174 @@ TextureImporter:
       bones: []
       spriteID: 5a70bee68a0138145ba08ffecf6c2fa0
       internalID: 1233087868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_7
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 129
+        width: 99
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5491c30fcfd8c704586ee1f582167b0f
+      internalID: 1804407044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_8
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 157
+        width: 76
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed94e8aa22fd90e488cc0ea44a2923cb
+      internalID: 1616409672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_9
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 41
+        width: 91
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc0b54d312e6d94eabd89e327c92ea1
+      internalID: 544952203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_10
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 40
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4917d8925a8b96f4ba1648791064ef37
+      internalID: 1522836943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_11
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 54
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37f058c034efff44b78ff6a5a1a5cb9
+      internalID: -313744643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_12
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 52
+        width: 86
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c96f16c46e11c40902e1b2b2e1552f
+      internalID: 403535890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_13
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 51
+        width: 88
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36489d9038050a546824bb6a6e67304b
+      internalID: 588012524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HUD_14
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 52
+        width: 83
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20a6c85730be504da50a5272f77da94
+      internalID: -1296499512
       vertices: []
       indices: 
       edges: []
@@ -269,11 +437,19 @@ TextureImporter:
     nameFileIdTable:
       HUD_0: 1803934578
       HUD_1: 683362393
+      HUD_10: 1522836943
+      HUD_11: -313744643
+      HUD_12: 403535890
+      HUD_13: 588012524
+      HUD_14: -1296499512
       HUD_2: -13779904
       HUD_3: 1148755507
       HUD_4: 1481250937
       HUD_5: 1242367797
       HUD_6: 1233087868
+      HUD_7: 1804407044
+      HUD_8: 1616409672
+      HUD_9: 544952203
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
