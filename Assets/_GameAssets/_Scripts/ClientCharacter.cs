@@ -216,6 +216,16 @@ public class CharacterDialogueInfo
     public string Introduction;
     public List<DialoguePart> DialogueParts;
 
+    public DialoguePart GetDialoguePartById(int id)
+    {
+        foreach (var part in DialogueParts)
+        {
+            if (part.Id == id) return part;
+        }
+
+        return null;
+    }
+
 }
 [Serializable]
 public class DialoguePart
