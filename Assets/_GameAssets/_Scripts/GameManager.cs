@@ -58,10 +58,14 @@ public class GameManager : MonoBehaviour
         if(_currentClient != null)
             Destroy(_currentClient.gameObject);
         _currentClient = _clientQueue.Dequeue();
+        DialoguePopup.Instance.SetDialogueInfo(_currentClient.DialogueInfo);
         _currentClient.transform.DOMove(ClientPosition.transform.position, 1f).OnStart(() =>
         {
             _currentClient.transform.DOScale(1f, 1f);
-        }).OnComplete(()=>UIManager.Instance.Show());
+        }).OnComplete(()=>UIManager.Instance.Show(() =>
+        {
+            DialoguePopup.Instance.ShowIntroduction();
+        }));
 
         foreach (var queueClient in _clientQueue)
         {

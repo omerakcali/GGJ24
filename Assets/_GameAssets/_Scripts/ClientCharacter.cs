@@ -30,6 +30,8 @@ public class ClientCharacter : MonoBehaviour
     
     [Header("Dialogue")] [HorizontalLine(color: EColor.Orange)]
     public CharacterDialogueInfo DialogueInfo;
+    
+    public bool DialogueDone { get; set; }
 
     private void Awake()
     {
@@ -215,6 +217,16 @@ public class CharacterDialogueInfo
     [ResizableTextArea]
     public string Introduction;
     public List<DialoguePart> DialogueParts;
+
+    public DialoguePart GetDialoguePartById(int id)
+    {
+        foreach (var part in DialogueParts)
+        {
+            if (part.Id == id) return part;
+        }
+
+        return null;
+    }
 
 }
 [Serializable]

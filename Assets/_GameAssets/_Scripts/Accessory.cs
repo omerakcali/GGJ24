@@ -10,9 +10,11 @@ public class Accessory : MonoBehaviour
     public int ScoreValue;
     [SerializeField] private SpriteRenderer SpriteRenderer;
 
+    public Sprite Icon;
+
     private TextMeshProUGUI a;
     
-    public Sprite Sprite => SpriteRenderer.sprite;
+    public Sprite Sprite => Icon ? Icon : SpriteRenderer.sprite;
     public bool State => SpriteRenderer.gameObject.activeSelf;
 
     private AccessorySlot _slot;
