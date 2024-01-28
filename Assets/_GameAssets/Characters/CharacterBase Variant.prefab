@@ -153,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7595413430563298066, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -213,12 +213,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7595413430563298066, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7988057150905357842}
+    - targetCorrespondingSourceObject: {fileID: -7595413430563298066, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2631151635434094379}
     - targetCorrespondingSourceObject: {fileID: 8180888311575453899, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3349485422713673445}
     - targetCorrespondingSourceObject: {fileID: 8180888311575453899, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4907059012070334194}
+    - targetCorrespondingSourceObject: {fileID: 8180888311575453899, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1290674348650681451}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
 --- !u!212 &1676961350656472711 stripped
 SpriteRenderer:
@@ -361,6 +367,51 @@ MonoBehaviour:
   ScoreValue: 100
   SpriteRenderer: {fileID: 5070916591988248688}
   Icon: {fileID: 3635688981534902791, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
+--- !u!61 &2631151635434094379
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2200409301005324333}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.12, y: 0.96}
+    newSize: {x: 1.12, y: 0.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.12, y: 0.96}
+  m_EdgeRadius: 0
 --- !u!4 &2247596556322442525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 5b2c8bb54f60099478aea829df9a904d, type: 3}
@@ -516,6 +567,51 @@ MonoBehaviour:
   ScoreValue: -40
   SpriteRenderer: {fileID: 1676961350656472711}
   Icon: {fileID: -5550123183624005409, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
+--- !u!61 &1290674348650681451
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8761363507581146120}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.74, y: 1.9}
+    newSize: {x: 3.74, y: 1.9}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.74, y: 1.9}
+  m_EdgeRadius: 0
 --- !u!1001 &6708142299459650387
 PrefabInstance:
   m_ObjectHideFlags: 0

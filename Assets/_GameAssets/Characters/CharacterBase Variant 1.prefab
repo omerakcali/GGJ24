@@ -88,12 +88,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7751269498262281042, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8801256820862655776}
+    - targetCorrespondingSourceObject: {fileID: 7751269498262281042, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8452793703722134790}
     - targetCorrespondingSourceObject: {fileID: 5902096427375006992, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4533449282676351856}
     - targetCorrespondingSourceObject: {fileID: 5902096427375006992, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1533976988142848588}
+    - targetCorrespondingSourceObject: {fileID: 5902096427375006992, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7472095769827502985}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
 --- !u!1 &605425107289994582 stripped
 GameObject:
@@ -249,6 +255,51 @@ MonoBehaviour:
   ScoreValue: -30
   SpriteRenderer: {fileID: 9185445981774414162}
   Icon: {fileID: -3349425941494611352, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
+--- !u!61 &8452793703722134790
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605425107289994582}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.6210527, y: 1.9052632}
+    newSize: {x: 2.6210527, y: 1.9052632}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.6210527, y: 1.9052632}
+  m_EdgeRadius: 0
 --- !u!1 &1723346784700994321 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -856138430712955627, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
@@ -374,6 +425,51 @@ MonoBehaviour:
   ScoreValue: -20
   SpriteRenderer: {fileID: 3670039103522114250}
   Icon: {fileID: 5367571203325167110, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
+--- !u!61 &7472095769827502985
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3610929265579342612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.4105263, y: 1.8736842}
+    newSize: {x: 1.4105263, y: 1.8736842}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4105263, y: 1.8736842}
+  m_EdgeRadius: 0
 --- !u!212 &3670039103522114250 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 5844112632056620238, guid: 5ad21b0e076b26f47b9c22219931d6b9, type: 3}
