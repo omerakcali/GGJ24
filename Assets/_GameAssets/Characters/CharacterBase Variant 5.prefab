@@ -193,6 +193,7 @@ MonoBehaviour:
   Id: 2
   ScoreValue: -30
   SpriteRenderer: {fileID: 4711904983344357214}
+  Icon: {fileID: -1516689466908542024, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!1 &931617800263132062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1174,7 @@ MonoBehaviour:
   Id: 1
   ScoreValue: 70
   SpriteRenderer: {fileID: 4782313362790556380}
+  Icon: {fileID: -6884131798149253683, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!1 &8530098901780568901
 GameObject:
   m_ObjectHideFlags: 0

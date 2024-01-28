@@ -533,6 +533,7 @@ MonoBehaviour:
   Id: 3
   ScoreValue: 100
   SpriteRenderer: {fileID: 4413273961996641376}
+  Icon: {fileID: -3361779280949431372, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!1 &3250877732749408366 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -856138430712955627, guid: d1f78de2ef8da5643b619c10f6009407, type: 3}
@@ -660,6 +661,7 @@ MonoBehaviour:
   Id: 1
   ScoreValue: -50
   SpriteRenderer: {fileID: 5012150846882802221}
+  Icon: {fileID: -6489355152771328710, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!212 &4413273961996641376 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 7222661070148608283, guid: d1f78de2ef8da5643b619c10f6009407, type: 3}
@@ -742,6 +744,7 @@ MonoBehaviour:
   Id: 2
   ScoreValue: -50
   SpriteRenderer: {fileID: 9021490054296723447}
+  Icon: {fileID: 1452315609313374587, guid: c709b8c8f36a3dc4884015ab7aca250b, type: 3}
 --- !u!4 &5633093545467296933 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: d1f78de2ef8da5643b619c10f6009407, type: 3}
