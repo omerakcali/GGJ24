@@ -29,6 +29,12 @@ public class Accessory : MonoBehaviour
         
     }
 
+    private void OnValidate()
+    {
+        if(SpriteRenderer == null) 
+            SpriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     private void OnMouseEnter()
     {
         if(!GameManager.Instance.RemoveItemMode) return;
