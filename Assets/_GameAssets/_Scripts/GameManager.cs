@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
         {
             var character = Instantiate(day.Characters[i]);
             _clientQueue.Enqueue(character);
-            character.transform.position = LinePosition.position + Vector3.right * i * LineDelta;
+            character.transform.position = LinePosition.position + Vector3.right * i * LineDelta + Vector3.forward*i;
             character.transform.localScale = Vector3.one*.75f;
         }
         UIManager.Instance.Hide(instant:true);
